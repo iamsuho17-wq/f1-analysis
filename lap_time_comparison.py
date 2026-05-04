@@ -21,10 +21,13 @@ print(avg_lap)
 
 # 그래프
 avg_lap.plot(kind='bar')
+
 plt.title("F1 Driver Average Lap Time Comparison")
 plt.ylabel("Lap Time (seconds)")
 plt.xlabel("Driver")
 plt.xticks(rotation=0)
 
 plt.tight_layout()
+
+plt.savefig("lap_time_graph.png", dpi=300)
 plt.show()
